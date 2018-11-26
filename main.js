@@ -6,7 +6,7 @@
 */
 
 const { app, BrowserWindow } = require('electron');
-
+const ipcMain = require('electron').ipcMain;
 var win = null;
 
 app.on("window-all-closed", function(e){
@@ -17,10 +17,14 @@ app.on("window-all-closed", function(e){
 
 app.on("ready", function(e){
 	win = new BrowserWindow({width: 640, height: 480});
+	win.setMenu(null);
 	win.loadURL('file://' + __dirname + '/html/index.html');
 	
 	win.on("closed", function(e){
 		win = null;
 	});
 	
+});
+ipcMain.on('loadGH', (event, arg) => {
+	externalWindow.loadURL(arg);
 });
