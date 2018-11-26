@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="../css/mainStyle.css" rel="stylesheet">
+	<meta charset="UTF-8"/>
+	<title>This is just the title.</title>
+</head>
+
+<body>
+	<div>
+		<p class="heading centerThis">Please choose one of the terms below to search</p>
+		<ul style="list-style-type: none; list-style-image: none; margin-left: 0px; padding-left: 0px;">
+			<li><input id="song" type="radio" name="searchFor"/>Song</li>
+			<li><input id="movie" type="radio" name="searchFor"/>Movie</li>
+			<li><input id="band" type="radio" name="searchFor"/>Band</li>
+		</ul>
+		
+		<input id="searchTerm" type="text"/>
+		<button onclick="search()">Search</button>
+	</div>
+	<div id="resultsContainer">
+	</div>
+	<script src="../js/searchHandler.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+/* This is for generic elements. */
+body{
+	color: #373F51;
+	background-color: #FEFEFE;
+}
+div{
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	border: 1px solid #F6F6F6;
+	padding: 5px;
+	margin: 1px;
+}
+p{
+	line-height: 22px;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	text-align: justify;
+}
+span{
+	line-height: 22px;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+}
+ul{
+	margin-left: 20px;
+	line-height: 22px;
+	font-family: "Roboto", sans-serif;
+	font-size: 22px;
+	list-style-type: disc;
+	list-style-image: url('../images/ulImage.png');
+}
+li{
+	margin: 5px;
+}
+ol{
+	margin-left: 20px;
+	line-height: 22px;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	list-style-type: decimal;
+}
+button{
+	color: #373F51;
+	background-color: #F1F1F1;
+	border-radius: 8px;
+	border: 1px solid #DFDFDF;
+	padding: 5px;
+	margin: 1px;
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+}
+button:active{
+	background-color: #EAEAEA;
+	//border-bottom: 0px solid #CFCFCF;
+	//border-top: 2px solid #CFCFCF;
+	//margin-top: 0px;
+}
+button:focus{
+	outline: none;
+	border: 2px solid #DFDFDF;
+	padding: 4px;
+}
+input{
+	background-color: #F1F1F1;
+	border-radius: 8px;
+	border: 2px solid #DFDFDF;
+	padding: 4px;
+	margin: 1px;
+	font-size: 14px;
+}
+input:focus{
+	outline: none;
+	border: 3px solid #DFDFDF;
+	padding: 3px;
+}
+textarea{
+	background-color: #F1F1F1;
+	border-radius: 8px;
+	border: 2px solid #DFDFDF;
+	padding: 4px;
+	margin: 1px;
+	font-size: 14px;
+}
+textarea:focus{
+	outline: none;
+	border: 3px solid #DFDFDF;
+	padding: 3px;
+}
+
+/* This is for generic properties you would like to apply */
+.centerThis{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/* Generic classes go here. */
+.mainContainer{
+	margin: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+.heading{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 36px;
+	font-variant: small-caps;
+}
+.smallHeading{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 28px;
+}
+.subHeading{
+	font-size: 22px;
+}
